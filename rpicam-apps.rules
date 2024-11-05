@@ -1,0 +1,3 @@
+# give users in the video group access to the rpi camera
+# see https://github.com/raspberrypi/rpicam-apps/issues/218
+SUBSYSTEM=="dma_heap", GROUP="video", MODE="0660"
