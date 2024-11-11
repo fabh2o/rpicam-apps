@@ -53,7 +53,7 @@ prepare() {
 build() {
   local meson_options=(
     --buildtype=release
-    -D enable_libav=disabled
+    -D enable_libav=enabled
     -D enable_drm=enabled
     -D enable_egl=disabled
     -D enable_qt=disabled
