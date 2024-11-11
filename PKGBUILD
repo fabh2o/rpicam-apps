@@ -69,8 +69,12 @@ build() {
 
 package() {
   depends=(
-    libcamera-rpi
     boost
+    libcamera-rpi
+    libdrm
+    libexif
+    libpng
+    libtiff
   )
 
   install --mode=644 -D rpicam-apps.rules "${pkgdir}/etc/udev/rules.d/rpicam-apps.rules"
