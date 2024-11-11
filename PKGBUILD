@@ -9,6 +9,7 @@ url="https://github.com/raspberrypi/rpicam-apps"
 license=(BSD-2-Clause)
 makedepends=(
   boost
+  ffmpeg
   git
   libcamera-rpi
   libdrm
@@ -70,6 +71,7 @@ build() {
 package() {
   depends=(
     boost
+    ffmpeg
     libcamera-rpi
     libdrm
     libexif
